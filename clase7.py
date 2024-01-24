@@ -125,3 +125,115 @@ def getEstadoDia():
 
 print(getEstadoDia())
 """
+
+# Ejercicio 8
+def getCategoriaUsuario():
+    sueldo = float(input('Ingrese su sueldo: '))
+    if (sueldo <= 0 ):
+        raise Exception('El sueldo no puede ser negativo')
+    elif (sueldo <= 100000.0):
+        return 'Cat.Baja'
+    elif ( sueldo > 100000.0 and sueldo <= 300000.0):
+        return 'Cat.Media'
+    elif (sueldo > 300000 ):
+        return 'Cat.Alta'
+    
+
+print(getCategoriaUsuario())
+
+#Ejercicio 9
+def getMayor(num1, num2):
+    mayor = num1
+    if (num2 > num1):
+        mayor = num2
+    return mayor
+
+
+def getMayor3NumIngresados():
+    num1 = int(input('Ingrese un numero: '))
+    num2 = int(input('Ingrese un numero: '))
+    num3 = int(input('Ingrese un numero: '))
+    mayorUno = getMayor(num1, num2)
+    mayorTotal = getMayor(mayorUno, num3)
+    return mayorTotal
+
+print(getMayor3NumIngresados())
+
+#Ejercicio 11:
+def getCategoriaVehiculo():
+    categoria = input('Ingrese su categoria: ').lower()
+    categRetornada = ''
+    if (categoria != 'coche' and categoria !='moto' and categoria != 'bicicleta'):
+        raise Exception('Error: Ingrese un vehiculo que sea coche, moto o bicicleta ')
+    elif (categoria == 'coche'):
+        categRetornada = 'Categoria es Coche'
+    elif (categoria == 'moto'):
+        categRetornada = 'Categoria es Moto'
+    elif (categoria == 'bicicleta'):
+        categRetornada = 'Categoria es Bicicleta'
+    
+    return categRetornada
+
+
+print(getCategoriaVehiculo())
+
+
+#Ejercicio 12
+def mostrarPromedio():
+    num1 = float(input('Ingrese un numero: '))
+    num2 = float(input('Ingrese un numero: '))
+    num3 = float(input('Ingrese un numero: '))
+    promedio = (num1 + num2 +num3)/3
+    print(f'Promedio float: {promedio} , Promedio entero: { int(promedio) }' )
+
+mostrarPromedio()
+
+# ejercicio 13
+
+def getSumaConRestric():
+    acumulador = 0 
+    num1 = int(input('Ingrese un numero entero: '))
+    if (num1 == 0 ):
+        return num1 
+    acumulador += num1
+
+    num2 = int(input('Ingrese un numero entero: '))
+    if (num2 == 0):
+        return acumulador
+    acumulador += num2
+    
+    num3 = int(input('Ingrese un numero entero: '))
+    if (num3 == 0):
+        return acumulador    
+    acumulador += num3
+
+    return acumulador
+
+print(getSumaConRestric())
+
+#ejercicio 14
+def getCantidadDigNum():
+    num1 = input('Ingrese un numero: ')
+    return len(num1)
+
+print(getCantidadDigNum())
+
+#Ejercicio 15: 
+def mostrarEscalaSegunPuntj():
+    num1 = int(input('Ingrese un numero: '))
+    if ( num1 < 0 or num1 >100):
+        print('Error: numero ingresado debe ser entre 0 y 100')
+    elif ( num1 >= 90 and num1 <= 100):
+        print('A')
+    elif (num1 >= 80 and num1 <= 89):
+        print('B')        
+    elif (num1 >= 70 and num1 <= 79):
+        print('C')        
+    elif (num1 >= 60 and num1 <= 69):
+        print('D')        
+    elif (num1 < 60):
+        print('F')        
+
+mostrarEscalaSegunPuntj()
+
+
