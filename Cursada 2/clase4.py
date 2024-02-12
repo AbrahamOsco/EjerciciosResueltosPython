@@ -98,7 +98,7 @@ def getMayorNumDe3():
     print(f" {numMasPeque}, {numMedio} {numMasGrande} " )
     return numMasGrande
 
-getMayorNumDe3()
+#getMayorNumDe3()
 
 """ 
 Otra solucion con if y elifs
@@ -109,4 +109,25 @@ Otra solucion con if y elifs
     elif ( (num3 == numMasGrande and num1 == numMasPeque) or (num3 == numMasPeque and num1 == numMasGrande)  ):
         numMedio = num2
 """
+
+""" 
+Categoría de vehículo:
+Crear una función que elija entre un tipo de vehículo (coche, moto, bicicleta)
+de forma aleatoria y retorne qué tipo de vehículo conduce según la categoría.
+"""
+
+def getCategoriaVehiculo():
+    categoriaRandom = r.choice(['Coche', 'Moto', 'Bicicleta'])
+    return categoriaRandom
+
+#print(getCategoriaVehiculo())
+
+def ejemplofor():
+    for i in [1, 3, 5, 7]:
+        print(f'El valor actual de i es :{i**2}')
+
+def main():
+    ejemplofor()
+
+main()
 
