@@ -6,7 +6,8 @@ def printResultados():
     print(var1, var2)
 """Crea un programa que calcule y retorne la suma de los  números pares del 1 al 10 
     usando un bucle while."""
-# [1, 2, 3, 4, 5, 6, 8, 9, 10] => 48*8*10
+# [1, 2, 3, 4, 5, 6, 8, 9, 10] => 48*8*10 
+
 def sumarPares(limite):
     i = 1
     acumulador = 1
