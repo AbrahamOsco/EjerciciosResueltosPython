@@ -41,11 +41,12 @@ def getProductoPares(unaLista):
 def duplicarLista(unaLista):
     for i in range(0, len(unaLista)):
         unaLista.insert(i*2, unaLista[i*2])
+        
     return unaLista
 
 def duplicar2(unaLista):
-    [elemento for elemento in unaLista for _ in range(2)]
-    print(unaLista)
+    print([e for e in unaLista for _ in range(3)])
+    
 
 def main():
     #pruebaStrings()
@@ -53,6 +54,7 @@ def main():
     listaLoca = [3, 4, 10, 2, 4, -1 ,3]
     print(sumarNumeros(listaLoca))
     print(getProductoPares(listaLoca))
-    print(duplicarLista(listaLoca))
+    #print(duplicarLista(listaLoca))
+    print(listaLoca)
     duplicar2(listaLoca)
 main()
