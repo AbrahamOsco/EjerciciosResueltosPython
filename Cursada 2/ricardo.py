@@ -1,11 +1,18 @@
-def func1():
-    print(" holaaX ")
-def func2():
-    print(" holaa D")
+def Tuplar(tupla):
+    diccionario={}
 
-def main():
-    listaLoca = [func1, func2]
-    for f in listaLoca:
-        f()
+    for i in range(0,len(tupla)):       
+        clave =tupla[i][0]
+        valores= tupla[i][1:]
+        diccionario[clave] = valores
+        
+    return diccionario
+   
+def main ():
+    tupla =[("JEAN","FRANCO","JACK","MAX"),(24,22,2,2)]
+    print(Tuplar(tupla))
+main() 
 
-main()
+""" 
+🤯 😶‍🌫️  🪵 :piple 🔥 📬 :speed 🖌️ 🌟
+"""
