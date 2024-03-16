@@ -40,7 +40,12 @@ def calcularPrecioFinal():
 """ 
 Crear una función que pide al usuario un número y verifica en qué rango se encuentra: 
 0-10, 11-20, 21-30, o "fuera de rango", debe mostrar el rango en donde esta.
-ej: si ingreso 4 debe printear Rango entre (0-10).
+ej: si ingreso 4 debe printear "Rango entre (0-10)".
+    numero = input("Ingrese un numero: ")   
+    if (not numero.isnumeric() ):
+        print("[ERROR] Ingrese un numero no una letra")
+        return "ERROR"
+    numero = int(numero)
 """
 
 def mostrarRango():
@@ -48,8 +53,8 @@ def mostrarRango():
         numero = int( input("Ingrese un numero: ") )
     except ValueError : # pongo aca el tipo error de error que me sale: 
         print("ERROR: Ingrese un numero y no un texto no numerico")
-        return
-        
+        return 
+
     if (numero >=0 and numero <= 10):
         print("Rango entre (0-10)")
     elif (numero >=11 and numero <=20):    
@@ -59,7 +64,7 @@ def mostrarRango():
     elif ( numero < 0 or numero >= 31):
         print("Fuera de rango")
 
-#mostrarRango()
+mostrarRango()
 """ 
 Crear una función que pide al usuario el mes y determina en qué estación 
 del año se encuentra. (Verano, Otoño, Invierno, Primavera). (Cada 3 meses 
@@ -67,13 +72,14 @@ calendario corresponde al orden de la estación anterior), debe mostrar
 la estación calculada.
 """
 def getEstacionActual():
-    dicAntony = { "enero":1, "febrero":2, "marzo":3, "abril":4, "mayo":5, "junio":6, 
+    dicMes = { "enero":1, "febrero":2, "marzo":3, "abril":4, "mayo":5, "junio":6, 
                    "julio":7, "agosto":8 , "septiembre":9, "octubre":10, "noviembre":11, "diciembre":12}
-    estacionIng = input("Ingrese una estacion: ").lower() # enero, febrero
-    if ( not estacionIng in dicAntony.keys() ):
+    estacionIng = input("Ingrese un mes: ").lower() #   EnErO, febrero
+    if ( not estacionIng in dicMes.keys() ):
         print("ERROR: ingrese una mes valida")
         return
-    valorMes = dicAntony[estacionIng]
+    
+    valorMes = dicMes[estacionIng]
     if (valorMes <= 3):
         print("Verano")
     elif (valorMes > 3 and valorMes <= 6):
@@ -85,4 +91,4 @@ def getEstacionActual():
   
     return estacionIng
 
-getEstacionActual()
+#getEstacionActual()
