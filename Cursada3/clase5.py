@@ -29,8 +29,27 @@ def ejemploFor():
 def ejemplListas():
     unaLista = ["ANTONY", "Juan", "Isabela", 40.0, True]
     print(unaLista)
+""" 
+Escribir una función que pide al usuario una cantidad de numeros a ingresar y
+luego que determine para cada numero entero ingresado:
+a) Si el número entero 𝑛, indicar si es par o no.
+"""
+
+def esPar(unNumero):
+    return (unNumero % 2 == 0)
+
+
+def calcularSiEsPar():
+    cantNumeros = int(input("Ingrese la cantidad de numeros que tiene: "))
+    for i in range(0, cantNumeros):
+        unNumero = int(input("Ingrese un Numero: "))
+        if (esPar(unNumero)):
+            print("El numero es Par")
+        else: 
+            print("El numero es impar")
+    
 
 def main():
-    ejemplListas()
+    calcularSiEsPar()
 
 main()
