@@ -23,6 +23,7 @@ def getSumaAcumulativa():
     print(f"Suma Actual : {sumaTotal}")
     return sumaTotal
 
+
 def main():
     getSumaAcumulativa()
 
