@@ -59,11 +59,11 @@ def multiplicarPares(unaLista):
             productoResult *= elemento
     return productoResult
 
-
 """
 Escribe una función que tome una lista como parámetro y devuelva una nueva
 lista donde cada elemento esté duplicado.
 """
+
 def duplicarLista(unaLista):
     listaDuplicada = []
     for elemento in unaLista:
