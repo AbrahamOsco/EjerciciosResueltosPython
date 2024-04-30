@@ -26,9 +26,9 @@ def probarSorted():
     nombres = ["Mathias", "Ana", "Gonzalo a", "Abraham Osco ", "Jhonson lalalala"]
     nombresOrdenados = sorted(nombres, key=criterioParaOrdenar)
     print(nombresOrdenados)
-# Hacer una funcion que retone el cubo de un numero y le reste su cuadrado. 
-# usando map y una funcion anomima (lambda). y que retorne la lista mapeada.
-# funcion_cubo_loco = lambda x : (x ** 3) - (x ** 2)
+# Hacer una funcion que recibe una lista de enteros y 
+# retone el resultado de la resta entre el cubo de ese numero y su cuadrado mapeado para cada entero. 
+# Requisto: Usar un map y una funcion anomima (lambda). funcion_cubo_loco = lambda x : (x ** 3) - (x ** 2)
 def calcularCuboLoco(unaLista):
     return list(map(lambda x : (x ** 3) - (x ** 2), unaLista))
     
