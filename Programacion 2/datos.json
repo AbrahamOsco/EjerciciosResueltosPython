@@ -1,0 +1,26 @@
+{
+    "hobbies": [
+        "correr",
+        "cantar",
+        "codear",
+        null
+    ],
+    "frutas": [
+        "pera",
+        "manzana",
+        "melon"
+    ],
+    "fullName": "Ricardo Gonzalo Mathias",
+    "mascotas": [
+        {
+            "animal": "Perro",
+            "edad": 3,
+            "pesoEnKg": 45.5
+        },
+        {
+            "animal": "Gato",
+            "edad": 4,
+            "pesoEnKg": 20.5
+        }
+    ]
+}

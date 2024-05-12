@@ -61,13 +61,13 @@ def escribirCSV():
      
 
 def main():
-    trabajarArchivosInicial()    
-    appendearLastLine()
+    #trabajarArchivosInicial()    
+    #appendearLastLine()
     #leerArchivo()
     #lecturaSinCloseYConEnumerate()
     #abrirImagen()
     leerCSV()
-    escribirCSV()
+    #escribirCSV()
     
 main()
 

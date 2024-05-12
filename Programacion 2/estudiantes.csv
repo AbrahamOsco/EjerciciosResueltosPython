@@ -1,4 +1,5 @@
-Nombre,Apellido,Edad
-Rony,Cra,4
-Gonza,Crack,30
-matias,mati,18
+idEstudiante,nombre,mail,pais
+0,gonzalo,gonzalo@gmail.com,Brasil
+1,ricardo,richard@gmail.com,Argentina
+2,matias,matias@gmail.com,RepDominicana
+3,juan,juan@gmail.com,Ecuador
