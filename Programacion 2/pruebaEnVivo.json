@@ -1,0 +1,19 @@
+{
+    "alumnosInfo": [
+        {
+            "nombre": "matias",
+            "numero": 10
+        },
+        {
+            "nombre": "gonzalo",
+            "numero": 15
+        },
+        {
+            "nombre": "cristian",
+            "numero": 17
+        }
+    ],
+    "cantAlumnos": 3,
+    "fruta": true,
+    "mascotas": null
+}
