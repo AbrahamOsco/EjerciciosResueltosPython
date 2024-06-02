@@ -1,0 +1,11 @@
+{
+  "alumnos": [
+    { "nombre": "Juan", "notas": { "matematicas": 85, "historia": 90 } },
+    { "nombre": "Ana", "notas": { "matematicas": 78, "ciencia": 88 } },
+    { "nombre": "Luis", "notas": { "historia": 95, "arte": 80 } },
+    {
+      "nombre": "Marta",
+      "notas": { "matematicas": 92, "ciencia": 91, "historia": 89 }
+    }
+  ]
+}

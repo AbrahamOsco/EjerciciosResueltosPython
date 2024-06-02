@@ -1,0 +1,12 @@
+{
+   "alumnos": [
+      {
+         "nombre": "Marta",
+         "notas": {
+            "ciencia": 91,
+            "historia": 89,
+            "matematicas": 92
+         }
+      }
+   ]
+}

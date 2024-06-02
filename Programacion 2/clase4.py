@@ -38,7 +38,7 @@ def abrirImagen():
         print(f"totalData: {totalData}")
 
 def leerCSV():
-    with open("estudiantes.csv", "r") as studentFile:
+    with open("estudiantes.csv", "+rt") as studentFile:
         csvReader = csv.reader(studentFile, delimiter=',')
         headers = next(csvReader, None)
         students = []
