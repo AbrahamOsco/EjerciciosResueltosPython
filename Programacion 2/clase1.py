@@ -119,10 +119,3 @@ def main():
     jugarJuego()
 
 main()
-
-
-""" 
-    dic = {"cuanto es 2+2": { "0" : [4, 5 , "NO SE SUMAR" , "QUESO"] },  }
-    dic = {"cuanto es 2+2": { "0" : [4, 5 , "NO SE SUMAR" , "QUESO"] },  }
-"""
-
