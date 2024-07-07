@@ -1,21 +1,18 @@
-
-
 class Nota:
     cantNotasCreadas:int = 0 #Esto es un atributo de clase
 
     def __init__(self, unNombreMateria:str, unaNota:int):
         self.nombreMateria = unNombreMateria #Esto es un atributo de instancia. 
         self.nota = unaNota
-        self.cantNotasCreadas +=1
-
+        Nota.cantNotasCreadas +=1 #aumento en 1 al atributo de clase. 
+  
 
 def main():
     unObjetoNota = Nota("matematicas", 10)
     unObjetoNota2 = Nota("ciencia", 8)
     unObjetoNota3 = Nota("programacion", 7)
-    print(f" {unObjetoNota.nombreMateria}  {unObjetoNota.nota} ")
-    print(f" {unObjetoNota3.cantNotasCreadas}")
-
+    print(f"value1:  {unObjetoNota.cantNotasCreadas}")
+    print(f"value2:  {unObjetoNota3.cantNotasCreadas}")
 
 
 main()
