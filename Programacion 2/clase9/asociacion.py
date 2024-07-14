@@ -10,10 +10,10 @@ class Guerrero:
     def getNombre(self):
         return self.nombre    
 
-    def atacar(self, otroGuerrero):
+    def atacar(self, otroGuerrero : Guerrero):
         simbolo,danio = self.arma.getAtaque()
         otroGuerrero.recibirDanio(danio)
-        print(f" {otroGuerrero.getNombre()} recibio {danio} !! {simbolo} ")
+        print(f" {otroGuerrero.getNombre()} recibio {danio} de danio !! con {simbolo} hecho por {self.nombre} ")
     
     def recibirDanio(self, danio):
         self.hp -= danio
@@ -50,6 +50,6 @@ class Arco(Arma):
 cuchillo = Cuchillo(20)
 unaEspada = Espada(15)
 arco = Arco(20)
-gonzalo = Guerrero("gonza", cuchillo)
+gonzalo = Guerrero("gonza", arco)
 juanPerez = Guerrero("juan perez", unaEspada)
 gonzalo.atacar(juanPerez)

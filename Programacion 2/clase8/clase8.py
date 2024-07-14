@@ -5,7 +5,9 @@ class Nota:
         self.nombreMateria = unNombreMateria #Esto es un atributo de instancia. 
         self.nota = unaNota
         Nota.cantNotasCreadas +=1 #aumento en 1 al atributo de clase. 
-  
+
+def f(x,y ):
+    return x +y 
 
 def main():
     unObjetoNota = Nota("matematicas", 10)
